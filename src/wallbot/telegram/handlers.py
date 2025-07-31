@@ -85,3 +85,5 @@ class TelegramHandlers:
                 text += chat_search.cat_ids
         if len(text) > 0:
             self.bot.send_message(message.chat.id, (text,))
+        else:
+            self.bot.send_message(message.chat.id, ("Lista vacía",))
