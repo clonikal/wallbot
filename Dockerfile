@@ -7,9 +7,9 @@ RUN apt-get update && \
     sed -i -e 's/# es_ES.UTF-8 UTF-8/es_ES.UTF-8 UTF-8/' /etc/locale.gen && \
     dpkg-reconfigure --frontend=noninteractive locales
 
-ENV LANG es_ES.UTF-8
-ENV LC_ALL es_ES.UTF-8
-ENV TZ Europe/Madrid
+ENV LANG=es_ES.UTF-8
+ENV LC_ALL=es_ES.UTF-8
+ENV TZ=Europe/Madrid
 
 WORKDIR /app
 
